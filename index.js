@@ -75,8 +75,6 @@ function is31Flavors(array){
   }else {
     return false;
   }
-  
- /*your code here*/
 }
 console.log ('task 2:', is31Flavors(originalFlavors));
 
@@ -93,12 +91,11 @@ Use the addFlavor function below to do the following:
   For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
 //MY NOTES TO SOLVE: needs to parameter: 1st array 2dn a string. 
-function addFlavor(/*your code here*/){
-  //we need to add the string to the front of the array-use unshift for this 
-  //return the array
-
- /*your code here*/
+function addFlavor(array, string){
+    array.unshift (string)
+    return array;
 }
+console.log ('task 3', addFlavor(originalFlavors, 'Rainbow Sherbert'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -112,12 +109,13 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 ////MY NOTES TO SOLVE: 1 param-array
-function removeLastFlavor(/*your code here*/){
+function removeLastFlavor(array){
+  array.pop()
+  return array;
   //remove the last item of the array using -.pop()
   //return the array
- /*your code here*/
 }
-
+console.log ('task 4', removeFlavorByName(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -132,11 +130,10 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 //MY NOTES TO SOLVE:params 2: 1st array 2nd:number which will be the index.
-function getFlavorByIndex(/*your code here*/){
-  //returning the index at the given number
-  //returning array[index]
-  /*your code here*/
+function getFlavorByIndex(array, number){
+  return array[number];
 }
+console.log('task 5:', getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
